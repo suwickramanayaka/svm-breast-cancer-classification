@@ -1,0 +1,42 @@
+{
+  "selected": "RBF SVM",
+  "metrics": {
+    "Linear SVM": {
+      "Accuracy": 0.9824561403508771,
+      "Precision": 1.0,
+      "Recall": 0.9523809523809523,
+      "F1-Score": 0.975609756097561,
+      "ROC-AUC": 0.9963624338624338
+    },
+    "RBF SVM": {
+      "Accuracy": 0.9736842105263158,
+      "Precision": 1.0,
+      "Recall": 0.9285714285714286,
+      "F1-Score": 0.9629629629629629,
+      "ROC-AUC": 0.9957010582010581
+    }
+  },
+  "cv": {
+    "Linear SVM": {
+      "mean_auc": 0.9944272445820432,
+      "params": {
+        "svc__C": 0.1
+      }
+    },
+    "RBF SVM": {
+      "mean_auc": 0.9959752321981423,
+      "params": {
+        "svc__C": 100,
+        "svc__gamma": 0.001
+      }
+    }
+  },
+  "confusion": {
+    "TN": 72,
+    "FP": 0,
+    "FN": 3,
+    "TP": 39
+  },
+  "interpretation": "The RBF SVM achieved the highest mean training CV ROC-AUC (0.9960). On the 114 test observations, its accuracy was 97.37%, precision 100.00%, malignant recall 92.86%, F1 0.9630, and AUC 0.9957. It correctly identified 39 of 42 malignant cases and 72 of 72 benign cases; 3 malignant cases were missed and 0 benign cases were flagged as malignant. The ROC curve describes the trade-off between detecting malignancies and false alarms as the score threshold changes. An AUC close to 1 indicates strong ranking of malignant above benign cases, but does not mean every diagnosis is correct or that scores are calibrated probabilities.",
+  "sklearn_version": "1.9.1"
+}

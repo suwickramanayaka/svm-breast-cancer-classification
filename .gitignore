@@ -1,0 +1,16 @@
+# Local assignment references and reports
+/Code Templates/
+*.docx
+*.pdf
+*.zip
+
+# Internal build and document review files
+/.work/
+
+# Operating system and notebook temporary files
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
